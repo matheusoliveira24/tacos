@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             TacosTheme {
-                // Criar o NavController dentro do composable
+
                 val navController = rememberNavController()
 
                 // Configurando a navegação
@@ -70,6 +70,6 @@ fun TacoDetailsScreen() {
 @Composable
 fun DefaultPreview() {
     TacosTheme {
-        HomeScreen(rememberNavController())  // Aqui também é usado rememberNavController corretamente
+        HomeScreen(rememberNavController())
     }
 }
