@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             TacosTheme {
                 // Criar o NavController dentro do composable
-                val navController = rememberNavController()  // Aqui é onde o rememberNavController é chamado
+                val navController = rememberNavController()
 
                 // Configurando a navegação
                 NavHost(navController = navController, startDestination = "home") {
